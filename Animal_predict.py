@@ -16,7 +16,7 @@ num_classes = len(classes)
 image_size=150
 
 
-uploaded_file = st.file_uploader('Choose an image of monkeys, boars or crows...', type = ['jpg','png'])
+uploaded_file = st.file_uploader('Choose an image of monkeys, cats or crows...', type = ['jpg','png'])
 if uploaded_file is not None:
     img = Image.open(uploaded_file)
     st.image(img)
